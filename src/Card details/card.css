@@ -1,0 +1,17 @@
+    /*Phones and tablet*/
+.cardsFrontBack{
+    width:90%;
+    position: relative;  
+}
+
+.frontPic,.backPic{
+    width: 90%;
+}
+.frontPic{
+    z-index: 0;
+}
+
+.backPic{
+    z-index: -1;
+} 
+
