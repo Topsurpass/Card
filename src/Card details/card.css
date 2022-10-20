@@ -1,17 +1,66 @@
     /*Phones and tablet*/
 .cardsFrontBack{
-    width:90%;
-    position: relative;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-
 .frontPic,.backPic{
-    width: 90%;
+    width: 100%;  
 }
-.frontPic{
-    z-index: 0;
+.front{
+    position: absolute;
+    margin-top: 60%;
+    width: 80%;
+    margin-left: -10%;
+}
+.back{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 10%;
+}
+p{
+    color: white;
+    position: absolute;
+}
+.name{
+    margin-top: 39%;
+    font-size: 100%;
+    padding-left:3%;
+    padding-right: 10%;
+}
+.monthCard{
+    margin-top: 39%;
+    margin-left: 80%;
+}
+.pin{
+    margin-top: 25%;
+    font-size: 100%;
+    padding-left:3%;
+}
+.cvvCode{
+    margin:19% 0% 0% 65%;
 }
 
-.backPic{
-    z-index: -1;
-} 
+@media only screen and (min-width:769px) {
 
+    .back{
+        position: relative;
+        width:100%;
+        margin-left: 50%;
+        margin-top: 5%;
+    }
+    .front{
+        position: relative;
+        width: 100%;
+        margin-top: 0%;
+        margin-left: 20%;
+    }
+    .cvvCode{
+        margin-top: 24%;
+        margin-left: 80%;
+    }
+    .cardsFrontBack{
+        padding-left: 8%;
+    }
+}

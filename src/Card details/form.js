@@ -17,6 +17,7 @@ export const Form = ({cardHolder, cardCode, month,
             <input type='text' name='cardNumber' placeholder='e.g 0000000000000000' maxLength={16} className='register'  id='cardnum'required value={cardCode} onChange={changeCard}/>
             <p className='error1'>{errorCard}</p>
             <br/>
+            <br/>
             <div className='monthCVV'>
                 <div className='expDate'>
                     <label  className='label'>EXP. DATE (MM/YY) </label> <br/>   

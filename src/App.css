@@ -1,117 +1,31 @@
+ .App{
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+ }
+ .purple{
+  margin-bottom: 20%;
+  background-image: url('file:///C:/Users/hp/OneDrive/Desktop/Temz/Portfolio/Projects/credit-card/src/Card%20details/images/bg-main-desktop.png');
+ }
+ .white{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+ 
+ @media only screen and (min-width:769px) {
   .App{
-    display: flex;
-    flex-direction: column;
-  }
-  .purpleBg{
-    position: relative;
-    text-align: center;
-    color:white;
-    display: flex;
-    height:auto;
-    justify-content: center;
-    background-image: url('file:///C:/Users/hp/OneDrive/Desktop/Temz/Portfolio/Projects/credit-card/src/Card%20details/images/bg-main-desktop.png');
-  }
-  .backPic{
-    margin: 10% 0 0 5%;
-    width:80%;
-    position: absolute;
-    z-index: 0;
-    display: flex;
-    flex-direction: column;
-  }
-  .backPic img{
-    width:100%;
-  }
-  .frontPic img{
-    width:100%;
-  }
-  .pinText{
-    text-align: left;
-    padding-left: 5%;
-    margin-bottom: 10px;
-    font-size: 100%;
-  }
-  .name{
-    font-size: 60%;
-    padding-left: 5%;
-  }
-  .frontPic{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    width: 80%;
-    margin: 35% 10% 0 0%;
-    z-index: 1;
-  }
-  .whiteBg{
-    width:100%;
-    height:auto;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .exp{
-    margin-top: -1%;
-    font-size: 80%;
-    padding-right: 3%;
-  }
-  .backNumber{
-    color: white;
-    font-size: 100%;
-    margin-top: -30%;
-    text-align: right;
-    padding-right: 13%;
-  }
-  .nameExp{
-    margin-top: -25%;
-    display: flex;
-    flex-direction: column;
-  }
-  .nameExp2{
-    display: flex;
-    justify-content: space-between;
-  }
-  .cardCreated{
-    margin-top: 30%;
-  }
-@media only screen and (min-width:769px) {
-  .App{
-    display: flex;
     flex-direction: row;
-  }
-  .purpleBg{
-    width:30%;
+   }
+   .purple{
+    height: 100vh;
+    width: 35%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-image: url('file:///C:/Users/hp/OneDrive/Desktop/Temz/Portfolio/Projects/credit-card/src/Card%20details/images/bg-main-desktop.png');
-  }
-  .whiteBg{
-    width:70%;
-    height:100vh;
-  }
-  .backPic{
-    width:90%;
-    margin: 0px;
-    position: inherit;
-    margin-left: 80%;
-    margin-top: -20%;
-  }
-  .frontPic{
-    width:90%;
-    margin: 0px;
-    margin-top: -80%;
-    margin-left: 50%;
-  }
-  .backNumber{
-    margin-top: -31%;
-  }
-  .cardCreated{
-    margin-top: 0%;
-  }
-  .pinText{
-    font-size: 20px;
-  }
-}
-
+    margin: 0;
+   }
+   .white{
+    width: 65%;
+    height: 100vh;
+   }
+ }
+   
