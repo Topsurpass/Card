@@ -34,7 +34,7 @@ export const Form = ({cardHolder, cardCode, month,
                 
             </div><br/>
             <div className='submitForm'>
-                <input type='submit' value='Confirm' className='submit' id='<CardSubmitted/>' />          
+                <input type='submit' value='Confirm' className='submit' id='CardSubmitted' />          
             </div>
             
         </form>
