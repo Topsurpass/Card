@@ -2,8 +2,6 @@ import { useState } from 'react';
 import './App.css';
 import { CardSubmitted } from './Card details/CardSubmitted';
 import { Form } from './Card details/form';
-// import bgcardback from './Card details/images/bgcardback.png';
-// import bgcardfront from './Card details/images/bgcardfront.png';
 import {BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Card from './Card details/card';
 
@@ -75,6 +73,7 @@ function App() {
       c[0].style.border = '1px solid green';
       setError2('');
     }
+
   }
 
   const handleYear =(event)=>{
@@ -115,18 +114,7 @@ function App() {
     }else if( d.value.length < 3 || isNaN(d.value) || d.value.includes(' ')){
       event.preventDefault();
     }else{
-
-      // if(localStorage.getItem('card storage')===null){
-      //   localStorage.setItem('card storage',`{
-      //     "card-name":"",
-      //     "card-number":"",
-      //     "card-month":"",
-      //     "card-year":"",
-      //     "card-cvv":""}`
-      //   );
-      // }
       const cardDetails = JSON.parse(localStorage.getItem('card storage'));
-
       cardDetails["card-name"]=`${name}`;
       cardDetails["card-number"]=`${card}`;
       cardDetails["card-month"]=`${month}`;
@@ -136,7 +124,6 @@ function App() {
     }
   }
   const store = JSON.parse( localStorage.getItem('card storage'));
-  // console.log(store)
   
   return (
     <Router>
