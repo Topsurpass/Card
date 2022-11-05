@@ -4,7 +4,7 @@ import './form.css';
 export const Form = (props) => {
   return (
     <div className='cardRegistration'>
-        <form name='validCardRegistration' onSubmit={props.submit} action='/submit' method='get'>
+        <form name='validCardRegistration' onSubmit={props.submit} action='' method='get'>
             <label className='label'>CARDHOLDER NAME</label> <br/>
             <input type='text' name='cardholderName' placeholder='e.g Surname Firstname' className='register'  id='cardname'required  value={props.cardHolder} onChange={props.changeName}/>
             <p className='error4'>{props.errorCard4}</p>
